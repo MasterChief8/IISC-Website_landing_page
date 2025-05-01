@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IISC-Home Page</title>
+<link rel="stylesheet" href="styles/stylen.css">
+
+       
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images\IISC_Heading__icon-removebg-preview.png" alt="iisc-image-with symbol and text">
+
+        <select name="lang" id="">
+
+            <option value="">English</option>
+            <option value="">हिंदी(HIndi)</option>
+            <option value="">ಕನ್ನಡ(Kannada)</option>
+        </select>
+
+        <div class="search">
+
+            <input type="text" placeholder="ENHANCED BY GOOGLE">
+
+            <button>&#128269;</button>
+
+
+        </div>
+    </header>
+
+    <nav>
+        <div class="containerForMenu">
+
+            <div>Menu</div>
+            <div onclick="barRotate(this)" class="Mbar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+        </div>
+
+        <div class="menus" id="menus">
+
+
+            <div class="menusContent" onclick="barRotate2(this)"><a href="">About</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <!-- abouts stuff starts here -->
+
+            <div class="menusContent2"><a href="">About</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <div class="menusContent2"><a href="">Academics</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <div class="menusContent2"><a href="">Admissions</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+
+            <div class="menusContent2"><a href="">Research</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <div class="menusContent2"><a href="">News & Events</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <div class="menusContent2"><a href="">Engage with IISC</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <!-- abkout s insides ends here -->
+
+            <div class="menusContent"><a href="">Academics</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <div class="menusContent"><a href="">Admissions</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+
+            <div class="menusContent"><a href="">Research</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <div class="menusContent"><a href="">News & Events</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+            <div class="menusContent"><a href="">Engage with IISC</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+                    <div class="barVer"></div>
+                    <div class="barHor"></div>
+
+                </div>
+            </div>
+
+
+            <div class="menusContent"><a href="">Accr. & Ranking</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+
+
+                </div>
+            </div>
+
+
+            <div class="menusContent l0s"><a href="projects\registration.php">Login Or Sign UP</a>
+                <div class="plus" onclick="plusOpen(this)">
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <script>
+            // for rotation menu bars
+            function barRotate(x) {
+                x.classList.toggle("change");
+
+                var z = document.getElementById("menus");
+                if (z.style.display === "flex") {
+                    z.style.display = "none";
+                }
+                else {
+                    z.style.display = "flex";
+                }
+            }
+
+            function barRotate2(x) {
+
+
+                var z = document.getElementById("menusContent2");
+                if (z.style.display === "flex") {
+                    z.style.display = "none";
+                }
+                else {
+                    z.style.display = "flex";
+                }
+            }
+
+        </script>
+
+
+
+        <script> // for opening menu bar
+            function plusOpen(y) {
+                y.classList.toggle("change2");
+            }
+
+
+
+        </script>
+
+
+        <!-- here starats the menu adfter 1000px -->
+
+        <div class="bigMenu">
+            <a href="">About</a>
+            <a href="">Academics</a>
+            <a href="">Admissions</a>
+            <a href="">Research</a>
+            <a href="">News&Events</a>
+            <a href="">Engage with IISc</a>
+            <link rel="stylesheet" href="styles\button.css">
+            <button class="donate-button" onclick="go()">Donate to Us</button>
+            <a href="projects\registration.php" >Login Or Sign UP</a>
+             <script>
+                 function go(){
+            window.location.href = "payment.html";
+        }
+             </script>
+
+        </div>
+    </nav>
+
+    <!-- slider starts -->
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+
+            <img src="images\pexels-anselsong-28492452.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="images\pexels-michael-swigunski-3825040-7079776.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="images\pexels-mikhail-nilov-8322898.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        setInterval(() => plusSlides(1), 3000);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+    <!-- slider endes -->
+
+
+<!-- news and announece part  -->
+<link rel="stylesheet" href="styles/cal.css">
+    <link rel="stylesheet" href="styles/newsAnnou.css">
+
+
+    <div class="container-news-announc">
+
+    <div class="abox bor">
+        <article class="item">
+            <p class="a">Announcement</p><p class="b">more..</p>
+        </article>
+        <hr>
+        <div class="wrap-cal-text">
+            <div class="sameline">
+                <div class="cal">
+                    <div class="up">20 Jan</div>
+                    <div class="down">2025</div>
+
+                </div>
+
+                <p class="text">Prof Apoorva Khare receives the Ganit Ratna Award</p>
+            </div>
+
+            <div class="sameline">
+
+                <div class="cal">
+                    <div class="up">20 Jan</div>
+                    <div class="down">2025</div>
+
+                </div>
+
+                <p class="text">Prof Apoorva Khare receives the Ganit Ratna Award</p>
+            </div>
+            <div class="sameline">
+
+                <div class="cal">
+                    <div class="up">20 Jan</div>
+                    <div class="down">2025</div>
+
+                </div>
+
+                <p class="text">Prof Apoorva Khare receives the Ganit Ratna Award</p>
+            </div>
+            <div class="sameline">
+                <div class="cal">
+                    <div class="up">20 Jan</div>
+                    <div class="down">2025</div>
+
+                </div>
+
+                <p class="text">Prof Apoorva Khare receives the Ganit Ratna Award</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="abox bor">
+        <article class="item">
+            <p class="a">Announcement</p><p class="b">more..</p>
+        </article>
+        <hr>
+        <div class="wrap-cal-text">
+            <div class="sameline">
+                <div class="cal">
+                    <div class="up">20 Jan</div>
+                    <div class="down">2025</div>
+
+                </div>
+
+                <p class="text">Prof Apoorva Khare receives the Ganit Ratna Award</p>
+            </div>
+
+            <div class="sameline">
+
+                <div class="cal">
+                    <div class="up">20 Jan</div>
+                    <div class="down">2025</div>
+
+                </div>
+
+                <p class="text">Prof Apoorva Khare receives the Ganit Ratna Award</p>
+            </div>
+            <div class="sameline">
+
+                <div class="cal">
+                    <div class="up">20 Jan</div>
+                    <div class="down">2025</div>
+
+                </div>
+
+                <p class="text">Prof Apoorva Khare receives the Ganit Ratna Award</p>
+            </div>
+            <div class="sameline">
+                <div class="cal">
+                    <div class="up">20 Jan</div>
+                    <div class="down">2025</div>
+
+                </div>
+
+                <p class="text">Prof Apoorva Khare receives the Ganit Ratna Award</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- news and annoucement part ends -->
+    <!--  cards -->
+
+    <div class="cards">
+
+
+        <div class="hover-card">
+            <img src="images\cosmos.png" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+        <div class="hover-card">
+            <img src="images\pexels-michael-swigunski-3825040-7079776.jpg" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+
+
+        <div class="hover-card">
+            <img src="images\pexels-anselsong-28492452.jpg" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+
+        <div class="hover-card">
+            <img src="images\cosmos.png" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+        <div class="hover-card">
+            <img src="images\pexels-michael-swigunski-3825040-7079776.jpg" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+
+
+        <div class="hover-card">
+            <img src="images\pexels-anselsong-28492452.jpg" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+
+
+        <div class="hover-card">
+            <img src="images\cosmos.png" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+        <div class="hover-card">
+            <img src="images\pexels-michael-swigunski-3825040-7079776.jpg" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+
+
+        <div class="hover-card">
+            <img src="images\pexels-anselsong-28492452.jpg" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+
+
+        <div class="hover-card">
+            <img src="images\cosmos.png" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+        <div class="hover-card">
+            <img src="images\pexels-michael-swigunski-3825040-7079776.jpg" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+
+
+        <div class="hover-card">
+            <img src="images\pexels-anselsong-28492452.jpg" alt="Background Image">
+            <div class="overlay">Your Text Here</div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- caeedsa end -->
+    <!-- herer starts the foooter -->
+
+    <footer>
+        <div class="footer1">
+            <a href="">Navigation in IISc</a>
+            <a href="">Resources</a>
+            <a href="">Campus Life</a>
+            <a href="">Policies</a>
+            <a href="">RTI</a>
+            <a href="">Complaints</a>
+        </div>
+        <div class="footer2">
+            <p>&copy; Indian Institute Of Science, Benguluru</p>
+
+          
+            
+
+            <div class="footer2Stuff">
+                <p>Contact Phone: +91 80 2293 2228 &nbsp;Maps & Directions</p>
+                <p>Feedback Email Login &#128274;Submit Content </p>
+            </div>
+            <div>
+
+                <a href=""><img src="images\facebookIMG.png" alt=""></a>
+                <a href=""><img src="images\instagramIMG.png" alt=""></a>
+                <a href=""><img src="images\twittterIMG.png" alt=""></a>
+                <a href=""><img src="images\Youtube IMG.png" alt=""></a>
+                <a href=""><img src="images\Linked IN IMG.png" alt=""></a>
+
+            </div>
+        </div>
+
+        <!-- maps -->
+
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <style>
+          #map {
+            height:300px;
+            width: 100%;
+        
+          }
+        </style>
+      
+       
+        <div id="map"></div>
+      
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script>
+          // Check if Geolocation is available
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+              (position) => {
+                // Get the user's location
+                const userLat = position.coords.latitude;
+                const userLng = position.coords.longitude;
+      
+                // Initialize the map and set the view to the user's location
+                const map = L.map("map").setView([userLat, userLng], 15);
+      
+                // Add OpenStreetMap tiles
+                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                  maxZoom: 19,
+                  attribution: '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+                }).addTo(map);
+      
+                // Add a marker at the user's location
+                L.marker([userLat, userLng])
+                  .addTo(map)
+                  .bindPopup("You are here!")
+                  .openPopup();
+              },
+              () => {
+                alert("Unable to retrieve your location. Please enable location services.");
+              }
+            );
+          } else {
+            alert("Geolocation is not supported by your browser.");
+          }
+        </script>
+      
+        <!-- m,aps ednds -->
+    </footer>
+
+
+    <!-- herer foorter ends -->
+
+
+
+
+    <!-- Whatsapp Logo -->
+    <div class="whatsapp_main">
+        <a href="https://wa.me/917408201933" target="_blank"><img src="images\watsapp.png" class="whatsapp_img">
+        </a>
+    </div>
+
+    <!-- scroollll -->
+    <button id="scrollBtn" onclick="scrollToTop()">↑</button>
+
+    <style>
+        /* Scroll Button */
+        #scrollBtn {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            background-color: #098dd4;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            display: none;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 50px;
+
+            z-index: 1000;
+        }
+
+        #scrollBtn:hover {
+            background-color: #16b7c9b9;
+        }
+    </style>
+
+    <script>
+
+
+        // Scroll to Top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show scroll button
+        window.onscroll = function () {
+            document.getElementById('scrollBtn').style.display =
+                document.documentElement.scrollTop > 100 ? 'block' : 'none';
+        };
+
+    </script>
+</body>
+
+</html>
